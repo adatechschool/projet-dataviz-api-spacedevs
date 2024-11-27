@@ -1,90 +1,36 @@
-import { body, headingApod, apodContainer, apod, titleApod, explanationApod, 
-    dateApod, imageApod, toggleButton, optionsContainer, 
-    dateSearch, dateRangeSearch, eraseButton, loadingMessage, API_KEY, BASE_URL_API,
-URL } from "./dom.js";
+const BASE_URL_API = `https://api.nasa.gov/planetary/apod`;
+const KEY = 'w1qZiSyElNKvBmMGpk3BYjIsrJSzpqz3caMVp90b';
 
-/** fonction asynchrone qui va récuperer les donées  */
-export async function fetchAPOD() {
-    const response = await fetch(URL);
-    if (!response.ok) {
-        throw new Error(`Erreur API: ${response.status}`);
-    }
-    return await response.json();
-}
-
-/** fonction qui va afficher les donées en asynchrone, donc qui attendras fetchAPOD() */
-export async function displayAPOD() {
-    loadingMessage.style.display = 'block'
+export async function fetchData(type, firstEntry, secondEntry) {
     try {
-        const data = await fetchAPOD();
-        if (!data || !data.title || !data.explanation || !data.date || !data.hdurl) {
-            throw new Error("Données manquantes dans la réponse de l'API");
+        let url;
+
+        if (type === 'apod') {
+            url = `${BASE_URL_API}?api_key=${KEY}`;
+        } else if (type === 'date') {
+            url = `${BASE_URL_API}?date=${firstEntry}&api_key=${KEY}`;
+        } else if (type === 'range') {
+            url = `${BASE_URL_API}?start_date=${firstEntry}&end_date=${secondEntry}&api_key=${KEY}`
+        } else if (type === 'random') {
+            url = `${BASE_URL_API}?count=${firstEntry}&api_key=${KEY}`
+        } else if (type === 'thumbs') {
+            url = `${BASE_URL_API}?thumbs=${firstEntry}&api_key=${KEY}`
         }
-        loadingMessage.style.display = 'none'
-        headingApod.innerText = "PICTURE OF THE DAY";
-        titleApod.innerHTML = `<strong>${data.title}</strong>`;
-        explanationApod.innerHTML = `<p>${data.explanation}</p>`;
-        dateApod.innerHTML = `<strong>${data.date}</strong>`;
-        imageApod.innerHTML = `<img src="${data.hdurl}" alt="${data.title}">`;
-    } catch (error) {
-        console.error("Erreur serveur :", error);
-        headingApod.innerText = "Erreur lors du chargement de l'image du jour.";
-        apodContainer.innerHTML = "<p>Veuillez réessayer plus tard.</p>";
-    }
-}
 
+        console.log(`fetching URL: $${url}`);
+        const response = await fetch(url);
 
-
-/** fonction pour chercher par range de date 
-export async function fetchRange(startDate, endDate) {
-    try {
-        const response = await fetch(`https://api.nasa.gov/planetary/apod?start_date=${startDate}&end_date=${endDate}&api_key=${API_KEY}`);
         if (!response.ok) {
-            throw new Error(`Erreur API: ${response.status}`);
-        }
-
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Erreur lors de la récupération des données :", error);
-        throw error;
-    }
-}
-
-
-export async function displayRange() {
-    const startDate = prompt("Entrez la date de début (YYYY-MM-DD) :");
-    const endDate = prompt("Entrez la date de fin (YYYY-MM-DD) :");
-    if (!startDate || !endDate) {
-        alert("Vous devez entrer les deux dates !");
-        return;
-    }
-
-    try {
-        loadingMessage.style.display = 'block';
-        const data = await fetchRange(startDate, endDate);
-        loadingMessage.style.display = 'none';
-        apodContainer.innerHTML = '';
-        if (data.length === 0) {
-            apodContainer.innerHTML = "<p>Aucun résultat pour cette plage de dates.</p>";
+            console.log('Erreur API:', response);
             return;
         }
 
-        data.forEach(item => {
-            const card = document.createElement('div');
-            card.classList.add('card');
-
-            card.innerHTML = `
-                <h3>${item.title}</h3>
-                <p><strong>Date:</strong> ${item.date}</p>
-                <img src="${item.url}" alt="${item.title}" style="max-width: 100%; height: auto;">
-                <p>${item.explanation}</p>
-            `;
-            apodContainer.appendChild(card);
-        });
+        const data = await response.json();
+        console.log(data);
     } catch (error) {
-        loadingMessage.style.display = 'none'; 
-        apodContainer.innerHTML = "<p>Erreur lors du chargement des données. Veuillez réessayer.</p>";
+        console.error(error);
     }
 }
-*/
+
+
+
