@@ -11,30 +11,23 @@
     <title>APOD EXPLORERS</title>
     <style>
         body {
-            background-color: grey;
+            background-color: midnightblue;
         }
     </style>
 </head>
 <body>
 
-    <button id="toggle-button">Afficher boutons</button>
-    <div id="options-container" style="display: none;">
-        <button id="APOD">Afficher image du jour</button>
-        <button id="date-search">Recherche par date</button>
-        <button id="date-range-search">Recherche par fourchette de date</button>
-        <button id="erase-button">Effacer contenu</button>
+    <button id="toggle-button">afficher</button>
+    <div id="buttons-container" style="display: none;">
+        <button id="button-apod" data-type="apod">photo du jour</button>
+        <button id="button-search-date" data-type="date">recherche par date</button>
+        <button id="button-search-range" data-type="range">recherche par fourchette de date</button>
+        <button id="button-count" data-type="random">count</button>
+        <button id="button-thumbs" data-type="thumbs">thumbs</button>
+        <button id="button-erase" data-type="erase">effacer</button>
     </div>
 
-    <h1></h1>
-    <!--defiler options-->
-   
+    <div id="results-container"></div>
 
-    <!-- Conteneur photo du jour -->
-    <div id="apod-container">   
-        <div id="title-apod"></div>
-        <div id="explanation-apod"></div>
-        <div id="date-apod"></div>
-        <div id="img-apod"></div>
-    </div>
 </body>
 </html>
