@@ -1,41 +1,46 @@
 /** importation des modules */
-import { body, headingApod, apodContainer, apod, titleApod, explanationApod, 
-    dateApod, imageApod, toggleButton, optionsContainer, 
-    dateSearch, dateRangeSearch, eraseButton, loadingMessage } from "./dom.js";
+import { toggleButton, loadingMessage, eraseButton, buttonContainer, resultContainer } from "./dom.js";
 
-import { displayAPOD,  } from "./api.js";
+import { fetchData } from "./api.js";
 
+let startDate;
+let endDate;
+let dateUserChoice;
+let randomUserChoice;
+let thumbsUserChoice;
 
 /** affficher/masquer boutons */
 toggleButton.addEventListener('click', () => {
-    const isHidden = optionsContainer.style.display === 'none' || optionsContainer.style.display === '';
+    const isHidden = buttonContainer.style.display === 'none' || buttonContainer.style.display === '';
     if (isHidden) {
-        optionsContainer.style.display = 'block';
-        toggleButton.innerText = "Masquer bouton";
+        buttonContainer.style.display = 'block';
+        toggleButton.innerText = "Masquer";
     } else {
-        optionsContainer.style.display = 'none';
-        toggleButton.innerText = 'Afficher boutons'
+        buttonContainer.style.display = 'none';
+        toggleButton.innerText = 'Afficher'
     }
 });
 
+/** BOUTONS */
+buttonContainer.addEventListener('click', (event) => {
+    const buttonType = event.target.dataset.type;
+    console.log(buttonType);
 
-/** effacer contenue page */
-eraseButton.addEventListener('click', () => {
-    headingApod.innerHTML = '';
-    titleApod.innerHTML = '';
-    explanationApod.innerHTML = '';
-    dateApod.innerHTML = '';
-    imageApod.innerHTML = '';
+    if (buttonType === 'apod') {
+        fetchData(buttonType);
+    } else if (buttonType === 'date') {
+        dateUserChoice = prompt("Veuillez entrer la date")
+        fetchData(buttonType, dateUserChoice)
+    } else if (buttonType === 'range') {
+        startDate = prompt("Veuillez entrer la date de debut");
+        endDate = prompt("Veuillez entrer la date de fin");
+        fetchData(buttonType, startDate, endDate)
+    } else if (buttonType === 'random') {
+        randomUserChoice = prompt("combien d'image voulez vous ?")
+        fetchData(buttonType, randomUserChoice)
+    } else if (buttonType === 'thumbs') {
+        fetchData(buttonType, thumbsUserChoice)
+    } else if (buttonType === 'erase') {
+        resultContainer.innerHTML = '';
+    }
 });
-
-
-/** Afficher Apod */
-apod.addEventListener('click', () => {
-    displayAPOD()
-});
-
-
-
-dateRangeSearch.addEventListener('click', () => {
-    displayRange();
-})
