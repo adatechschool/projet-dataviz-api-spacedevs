@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="ui.js" defer></script>
+    <script type="module" src="dom.js"></script>
+    <script type="module" src="api.js"></script>
+    <script type="module" src="storage.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>APOD EXPLORERS</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggle-button">Afficher boutons</button>
+    <div id="options-container" style="display: none;">
+        <button id="APOD">Afficher image du jour</button>
+        <button id="date-search">Recherche par date</button>
+        <button id="date-range-search">Recherche par fourchette de date</button>
+        <button id="erase-button">Effacer contenu</button>
+    </div>
+
+    <h1></h1>
+    <!--defiler options-->
+   
+
+    <!-- Conteneur photo du jour -->
+    <div id="apod-container">   
+        <div id="title-apod"></div>
+        <div id="explanation-apod"></div>
+        <div id="date-apod"></div>
+        <div id="img-apod"></div>
+    </div>
+</body>
+</html>
