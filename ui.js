@@ -1,15 +1,29 @@
-import { fetchData } from "/Users/nexus/ada/test/testSpaceDev/NASA/js/api.js";
-
-async function loadPicture() {
-  const response = await fetchData('apod');
-  const data = response.json();
+/*import { fetchData } from "api.js";*/
+//import { apodContainer } from "./dom";
+const apodContainer = document.getElementById('apod-container');
+async function loadApod() {
+  const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=w1qZiSyElNKvBmMGpk3BYjIsrJSzpqz3caMVp90b');
+  console.log(response);
+  const data = await response.json();
   console.log(data)
-  date.innerHTML = data.date;
+ apodContainer.innerHTML = 
+  `<h1>${data.date}</h1>
+  <h2>${data.title}</h2>
+  <img src=${data.hdurl}>
+  <p>${data.explanation}</p>`
+}
+loadApod();
+  /*
+  */
+
+  /*
+  data.innerHTML = data.date;
   titre.innerHTML = data.title;
   picture.innerHTML = `<img src="${data.hdurl}" alt="${data.title}">`;
   description.innerHTML = data.explanation;
-}
-loadPicture();
+  */
+
+
 
 
 
