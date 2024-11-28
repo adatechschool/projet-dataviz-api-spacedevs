@@ -1,46 +1,88 @@
-/** importation des modules */
-import { toggleButton, loadingMessage, eraseButton, buttonContainer, resultContainer } from "./dom.js";
+import { fetchData } from "/Users/nexus/ada/test/testSpaceDev/NASA/js/api.js";
 
-import { fetchData } from "./api.js";
+async function loadPicture() {
+  const response = await fetchData('apod');
+  const data = response.json();
+  console.log(data)
+  date.innerHTML = data.date;
+  titre.innerHTML = data.title;
+  picture.innerHTML = `<img src="${data.hdurl}" alt="${data.title}">`;
+  description.innerHTML = data.explanation;
+}
+loadPicture();
 
-let startDate;
-let endDate;
-let dateUserChoice;
-let randomUserChoice;
-let thumbsUserChoice;
 
-/** affficher/masquer boutons */
-toggleButton.addEventListener('click', () => {
-    const isHidden = buttonContainer.style.display === 'none' || buttonContainer.style.display === '';
-    if (isHidden) {
-        buttonContainer.style.display = 'block';
-        toggleButton.innerText = "Masquer";
-    } else {
-        buttonContainer.style.display = 'none';
-        toggleButton.innerText = 'Afficher'
-    }
-});
 
-/** BOUTONS */
-buttonContainer.addEventListener('click', (event) => {
-    const buttonType = event.target.dataset.type;
-    console.log(buttonType);
 
-    if (buttonType === 'apod') {
-        fetchData(buttonType);
-    } else if (buttonType === 'date') {
-        dateUserChoice = prompt("Veuillez entrer la date")
-        fetchData(buttonType, dateUserChoice)
-    } else if (buttonType === 'range') {
-        startDate = prompt("Veuillez entrer la date de debut");
-        endDate = prompt("Veuillez entrer la date de fin");
-        fetchData(buttonType, startDate, endDate)
-    } else if (buttonType === 'random') {
-        randomUserChoice = prompt("combien d'image voulez vous ?")
-        fetchData(buttonType, randomUserChoice)
-    } else if (buttonType === 'thumbs') {
-        fetchData(buttonType, thumbsUserChoice)
-    } else if (buttonType === 'erase') {
-        resultContainer.innerHTML = '';
-    }
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const choiceDate = document.getElementById("dateInput");
+const btnSearch = document.getElementById("search-btn");
+const result = document.getElementById("result");
+
+async function loadPicture() {
+  const response = await fetch(
+    `https://api.nasa.gov/planetary/apod?date=2024-02-18&api_key=XP0cvfospdzNkNsHoKJQheIgg6YH30nW7ltVbpgj`
+  );
+  const data = await response.json();
+  result.innerHTML = data.title;
+  console.log(data);
+}
+
+btnSearch.addEventListener("click", loadPicture());*/
+
+/*let getDate = () => {
+  let date = choiceDate.value;
+  let url = `https://api.nasa.gov/planetary/apod?date=2024-02-18&api_key=XP0cvfospdzNkNsHoKJQheIgg6YH30nW7ltVbpgj`;*/
+
+//si le champ input est vide
+/*if (date.length <= 0) {
+    result.innerHTML = `<h3 class="msg">Merci de renter une date valide`;
+  } else {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        //si la date existe dans la base de données
+        if (data.response == "true") {
+          result.innerHTML = `
+          <div class ="info">
+          
+          <h2>${data.title}</h2>
+          
+          <h3>${data.date}</h3>
+          <p>${data.explanation}</p>
+
+          </div>
+          <div class = "picture">
+          <img src = ${data.hdurl}
+          </div>`;
+        }
+        //si la date n'existe pas
+        else {
+          result.innerHTML = `<h3 class="msg">${data.error}</h3>`;
+        }
+      })
+      .catch(() => {
+        result.innerHTML = `<h3 class="msg">Il y a une erreur</h3>`;
+      });
+  }
+};
+
+btnSearch.addEventListener("click", getDate);
+window.addEventListener("load", getDate);*/
