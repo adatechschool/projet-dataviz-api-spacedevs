@@ -1,8 +1,3 @@
-/** Selection des conteneur pour APOD ( 'APOD' => photo du jour ) */
-export const body = document.getElementById('body');
-export const headingApod = document.querySelector('h1')
-export const apodContainer = document.getElementById('apod-container');
-
 /** BOUTONS */
 export const toggleButton = document.getElementById('toggle-button');
 export const buttonContainer = document.getElementById('buttons-container');
