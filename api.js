@@ -1,7 +1,7 @@
 const BASE_URL_API = `https://api.nasa.gov/planetary/apod`;
 const KEY = 'w1qZiSyElNKvBmMGpk3BYjIsrJSzpqz3caMVp90b';
 
-export async function fetchData(type, firstEntry, secondEntry) {
+export const fetchData = async (type, firstEntry, secondEntry) => {
     try {
         let url;
 
@@ -10,24 +10,25 @@ export async function fetchData(type, firstEntry, secondEntry) {
         } else if (type === 'date') {
             url = `${BASE_URL_API}?date=${firstEntry}&api_key=${KEY}`;
         } else if (type === 'range') {
-            url = `${BASE_URL_API}?start_date=${firstEntry}&end_date=${secondEntry}&api_key=${KEY}`
+            url = `${BASE_URL_API}?start_date=${firstEntry}&end_date=${secondEntry}&api_key=${KEY}`;
         } else if (type === 'random') {
-            url = `${BASE_URL_API}?count=${firstEntry}&api_key=${KEY}`
+            url = `${BASE_URL_API}?count=${firstEntry}&api_key=${KEY}`;
         } else if (type === 'thumbs') {
-            url = `${BASE_URL_API}?thumbs=${firstEntry}&api_key=${KEY}`
+            url = `${BASE_URL_API}?thumbs=${firstEntry}&api_key=${KEY}`;
+        } else {
+            throw new Error(`Type de requête non pris en charge : ${type}`);
         }
 
-        console.log(`fetching URL: $${url}`);
+        console.log(`Fetching URL: ${url}`);
         const response = await fetch(url);
-
         if (!response.ok) {
-            console.log('Erreur API:', response);
-            return;
+            throw new Error(`Erreur API : ${response.status} - ${response.statusText}`);
         }
 
         const data = await response.json();
-        console.log(data);
+        return data;
     } catch (error) {
-        console.error(error);
+        console.error('Erreur dans fetchData :', error);
+        throw error;
     }
-}
+};
