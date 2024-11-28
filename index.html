@@ -1,1 +1,35 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="ui.js" defer></script>
+    <script type="module" src="dom.js"></script>
+    <script type="module" src="api.js"></script>
+    <script type="module" src="storage.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>APOD EXPLORERS</title>
+    <style>
+      body {
+        background-color: midnightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggle-button">afficher</button>
+    <div id="buttons-container" style="display: none">
+      <button id="button-apod" data-type="apod">photo du jour</button>
+      <button id="button-search-date" data-type="date">
+        recherche par date
+      </button>
+      <button id="button-search-range" data-type="range">
+        recherche par fourchette de date
+      </button>
+      <button id="button-count" data-type="random">count</button>
+      <button id="button-thumbs" data-type="thumbs">thumbs</button>
+      <button id="button-erase" data-type="erase">effacer</button>
+    </div>
+
+    <div id="results-container"></div>
+  </body>
+</html>
