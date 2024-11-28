@@ -1,4 +1,4 @@
-/*import { fetchData } from "api.js";*/
+//import { fetchData } from "api.js";
 //import { apodContainer } from "./dom";
 const apodContainer = document.getElementById('apod-container');
 async function loadApod() {
@@ -13,8 +13,6 @@ async function loadApod() {
   <p>${data.explanation}</p>`
 }
 loadApod();
-  /*
-  */
 
   /*
   data.innerHTML = data.date;
