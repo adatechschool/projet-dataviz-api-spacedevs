@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="image/nasa-icon" rel="shortcut icon" href="/media/img/NASA_logo.svg.png"/>
+    <link
+      type="image/nasa-icon"
+      rel="shortcut icon"
+      href="/media/img/NASA_logo.svg.png"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="dom.js"defer></script>
+    <script type="module" src="dom.js" defer></script>
     <script type="module" src="api.js" defer></script>
     <script type="module" src="ui.js" defer></script>
     <title>NASA</title>
   </head>
   <body>
-    
     <header>
       <nav>
         <div class="logo">
-          <img src="/media/img/NASA_logo.svg.png" alt="logo de la NASA" />
+          <img src="/media/img-html/NASA_logo.svg.png" alt="logo de la NASA" />
         </div>
         <div>
           <a href="index.html">Acceuil</a>
@@ -24,18 +27,17 @@
         </div>
       </nav>
     </header>
-    
-    <input type="date" id="input-start-date">
-    <input type="date" id="input-end-date">
-    <button id="button-display-range" data-type="range">display</button>
 
-    <div id="display-container"></div>
-
-
-
-
-
-
-    
+    <div class="form-container">
+      <input type="date" id="input-start-date" class="input-start-date" />
+      <input type="date" id="input-end-date" class="input-end-date" />
+      <button
+        id="button-display-range"
+        data-type="range"
+        class="button-display-range"
+      >
+        Valider
+      </button>
+    </div>
   </body>
 </html>
