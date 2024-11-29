@@ -27,123 +27,137 @@
         "constellation": "Constellation de la vierge",
         "Distance": "À environ 29 millions d'années-lumière",
         "description": "Cette image a été obtenue grâce à l’instrument MIRI. Elle montre la galaxie du Sombrero déjà immortalisée par Hubble. La galaxie est située à 30 millions d’années-lumière. Elle produit qu’une seule étoile de la masse de notre Soleil par an, deux fois moins que la Voie Lactée.",
-        "url_image": "./media/james-webb/sombrero-galaxy-M104.png"
+        "image_path": "./media/james-webb/sombrero-galaxy-M104.png"
     },
     {
         "id": "4",
         "date": "31 octobre 2024",
         "titre": "IC 2163 et NGC 2207",
         "sous-titre": "Quand deux galaxies se frôlèrent",
-        "constellation": "Canis Major",
-        "view": "Constellation de la Colombe",
+        "constellation": "Constellation du Grand Chien",
+        "Distance": "114 millions d'années-lumière",
         "description": "Cette image a été obtenue par les télescopes Webb et Hubble. Elles se sont frôlées il y a quelques millions d’années. La plus petite IC 2163 est passée “derrière” NGC 2207. A elles-deux, elles forment environ 24 étoiles chaque année alors que notre galaxie ne forme que deux à trois étoiles semblable au Soleil par an.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/weic2426a-1-1170x549.jpg"
+        "image_path": "./media/james-webb/IC-2163-et-NGC-2207.png"
     },
     {
-        "id": "5"
+        "id": "5",
         "date": "4 octobre 2024",
         "titre": "NGC 602",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "UN AMAS OUVERT D’ÉTOILES",
+        "constellation": "Constellation de l’Hydre Mâle",
+        "Distance": "",
         "description": "Cette image prise par NIRCam et MIRI laisse libre cours à l’imagination. Le rayonnement et l’onde choc de l’amas ont éjecté la majeure partie du gaz de la nébuleuse. Les nuages sombres de poussière dense et la forte densité de gaz ionisé suggèrent que des étoiles y sont en cours de formation. Située dans la constellation de l’Hydre, la nébuleuse se trouve à 200 000 années lumière.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/weic2425a-2-1170x765.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "8"
+        "id": "6",
         "date": "1er octobre 2024",
         "titre": "L’amas de l’Autel",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Cet amas, aussi connu sous le nom de Westerlund 1, est situé à 12 000 années-lumière. Il concentre une très forte densité d’étoiles massives, sans égal dans le reste de notre galaxie. Cet amas est estimé entre 3,5 et 5 millions d’années.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/potm2409a-2-1170x764.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "9"
+        "id": "7",
         "date": "27 août 2024",
         "titre": "Trois supernovas pour le prix d’une seule",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Cette image prise par NIRCam montre la supernova H0pe, qui apparaît trois fois grâce au phénomène de lentille gravitationnelle. La lumière a pris trois chemins différents à travers l’amas de galaxie G165, situé à 3,6 milliards d’années-lumière.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/h0pe-1170x585.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "10"
+        "id": "8",
         "date": "18 septembre 2024",
         "titre": "Arp 107 : quand deux galaxies entrent en collision",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Cette image montre deux galaxies en collision. Les données dans le proche infrarouge révèlent des étoiles anciennes, tandis que les données MIRI mettent en évidence les jeunes étoiles et les régions de formation d’étoiles.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/arp107-1170x467.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "11"
+        "id": "9",
         "date": "20 juin 2024",
         "titre": "Le nuage de Digel 2S",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Cette image montre deux amas lumineux de jeunes étoiles dans le nuage de Digel, situé à 40 000 années-lumière. Certaines étoiles sont des proto-étoiles avec des disques d’accrétion et des jets de matière.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/weic2422a-1170x856.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "12"
+        "id": "10",
         "date": "30 mai 2024",
         "titre": "NGC 1333 : la nébuleuse de Persée",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Cette nébuleuse par réflexion, située à 960 années-lumière, est un site actif de formation d’étoiles. Les objets Herbig-Haro visibles témoignent de collisions entre matière ionisée et nuages environnants.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/ngc1333-1170x957.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "13"
+        "id": "11",
         "date": "12 juillet 2024",
         "titre": "Le manchot gardant son œuf",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Ce duo de galaxies, Arp 142, a subi une collision il y a entre 25 et 75 millions d’années. Cette collision a déclenché une formation intense de nouvelles étoiles.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/arp142-1100x1536.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "14"
+        "id": "12",
         "date": "9 juin 2024",
         "titre": "La nébuleuse du serpent",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Située à 1 300 années-lumière, cette région de formation d’étoiles contient un amas dense d’étoiles nouvelles. Le gaz et la poussière sont si denses qu’aucune lumière proche de l’infrarouge ne passe.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/nebuleuse-du-serpent-1170x741.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "15"
+        "id": "13",
         "date": "30 mai 2024",
         "titre": "JADES-GS-z14-0",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Cette galaxie primitive, observée 290 millions d’années après le Big Bang, offre des informations précieuses sur les premières phases de formation des galaxies.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/jades4-1170x1143.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "16"
+        "id": "14",
         "date": "29 mai 2024",
         "titre": "Caldwell 21",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "La galaxie NGC 4449 aussi répertoriée sous le nom de Caldwell 21 est située à 12 millions d’années-lumière de la Terre. Elle forme des étoiles depuis plusieurs milliards d’années, mais elle connaît actuellement une période de formation d’étoiles à un rythme beaucoup plus élevé que par le passé. On parle de sursaut d’étoiles.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/ngc-4449-1170x689.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "17"
+        "id": "15",
         "date": "1er mai 2024",
         "titre": "L’illumination de NGC 6440",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "NGC 6440, un amas globulaire situé à environ 28 000 années-lumière de la Terre dans la constellation du Sagittaire. Il s’agit d’un amas de vieilles étoiles, liées entre elles par la gravité. Ils contiennent des centaines de milliers d’étoiles.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/ngc6440.jpg"
+        "image_path": "./media/james-webb/"
     },
     {
-        "id": "18"
+        "id": "16",
         "date": "3 avril 2024",
         "titre": "M82 la galaxie du cigare",
-        "view": "Constellation de la Colombe",
+        "sous-titre": "",
+        "constellation": "",
+        "Distance": "",
         "description": "Déjà recensée au XVIIIe siècle, la galaxie du cigare est située à 12 millions d’années-lumière. Cette image révèle un vent galactique déclenché par la formation rapide d’étoiles et les supernovas qui en découlent.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/m82.jpg"
-    },
-    {
-        "id": "1",
-        "date": "12 juillet 2022",
-        "titre": "La toute première image du JWST : SMACS 0723",
-        "sous-titre": "Amas de galaxies à effet de lentille",
-        "constellation": "Constellation du Poisson volant",
-        "Distance": "Le décalage vers le rouge de l'amas est z=0,39 (environ 4,24 milliards d'années-lumière)",
-        "description": "Cette première image a permis de découvrir l’image infrarouge la plus nette et la plus profonde jamais produite. Il s’agit de l’amas de galaxies SMACS 0723, apparaissant tel qu’il était il y a 4,6 milliards d’années, révélant des milliers de galaxies.",
-        "image_path": "./media/james-webb/SMACS-0723-JWST.png"
+        "image_path": "./media/james-webb/"
     },
     {
         "id": "17",
@@ -152,6 +166,15 @@
         "sous-titre": "",
         "constellation": "",
         "Distance": "",
+        "image_path": "./media/james-webb/"
+    },
+    {
+        "id": "17",
+        "date": "",
+        "titre": "",
+        "sous-titre": "",
+        "constellation": "",
+        "distance": "",
         "description": "",
         "image_path": "./media/james-webb/"
     },
