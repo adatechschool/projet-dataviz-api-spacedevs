@@ -1,0 +1,260 @@
+[
+    {
+        "id": "1",
+        "date": "12 juillet 2022",
+        "titre": "La toute première image du JWST : SMACS 0723",
+        "constellation": "Volans",
+        "Distance": "Le décalage vers le rouge de l'amas est z=0,39 (environ 4,24 milliards d'années-lumière)",
+        "view": "Amas de galaxies à effet de lentille",
+        "description": "Cette première image a permis de découvrir l’image infrarouge la plus nette et la plus profonde jamais produite. Il s’agit de l’amas de galaxies SMACS 0723, apparaissant tel qu’il était il y a 4,6 milliards d’années, révélant des milliers de galaxies.",
+        "image_path": "./media/james-webb/SMACS-0723-JWST.png"
+    },
+    {
+        "id": "2",
+        "date": "27 novembre 2024",
+        "titre": "NGC 2090",
+        "constellation": "Columba",
+        "Distance": "40 millions d'années-lumière",
+        "type": "GALAXIE SPIRALE",
+        "view": "null",
+        "description": "Grâce aux instruments NIRCam et MIRI combinés, le télescope spatial James Webb nous montre cette galaxie spirale située dans la constellation de la Colombe à 40 millions d’années-lumière. Les bras spiraux, le gaz et la poussière sont visibles avec d’incroyables détails.",
+        "image_path": "./media/james-webb/NGC-2090.jpg"
+    },
+    {
+        "id": "3",
+        "date": "25 novembre 2024",
+        "titre": "La galaxie du Sombrero M104",
+        "constellation": "virgo",
+        "Distance": "À environ 29 millions d'années-lumière",
+        "description": "Cette image a été obtenue grâce à l’instrument MIRI. Elle montre la galaxie du Sombrero déjà immortalisée par Hubble. La galaxie est située à 30 millions d’années-lumière. Elle produit qu’une seule étoile de la masse de notre Soleil par an, deux fois moins que la Voie Lactée.",
+        "url_image": "./media/james-webb/sombrero-galaxy-M104.png"
+    },
+    {
+        "id": "6",
+        "date": "31 octobre 2024",
+        "titre": "IC 2163 et NGC 2207",
+        "sous-titre": "Quand deux galaxies se frôlèrent",
+        "constellation": "Canis Major",
+        "view": "Constellation de la Colombe",
+        "description": "Cette image a été obtenue par les télescopes Webb et Hubble. Elles se sont frôlées il y a quelques millions d’années. La plus petite IC 2163 est passée “derrière” NGC 2207. A elles-deux, elles forment environ 24 étoiles chaque année alors que notre galaxie ne forme que deux à trois étoiles semblable au Soleil par an.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/weic2426a-1-1170x549.jpg"
+    },
+    {
+        "id": "2",
+        "date": "12 juillet 2022",
+        "titre": "Nébuleuse de l’anneau austral",
+        "constellation": "virgo",
+        "view": "Constellation de la Colombe",
+        "description": "Cette nébuleuse planétaire, découverte par l’astronome britannique John Herschel en 1835, a un diamètre d’environ 0,93 année-lumière. Les deux étoiles au centre forment un système binaire, dont le membre le moins lumineux est la naine blanche à l'origine de cette nébuleuse.",
+        "url_image": "https://www.cite-espace.com/wp-content/uploads/2022/07/Nebuleuse-anneau-austral-JWST.jpg"
+    },
+    {
+        "id": "3",
+        "date": "11 juillet 2022",
+        "titre": "Le Quintette de Stéphan",
+        "view": "Constellation de la Colombe",
+        "description": "Ce regroupement visuel de galaxies dans la constellation de Pégase compte initialement cinq galaxies membres : NGC 7317, la paire de galaxies NGC 7318 (A et B), NGC 7319 et NGC 7320. Parmi elles, quatre forment réellement un groupe compact situé à environ 290 millions d’années-lumière.",
+        "image_path": "https://www.cite-espace.com/wp-content/uploads/2022/07/Quintette-Stephan-JWST.jpg"
+    },
+    {
+        "id": "7"
+        "date": "4 octobre 2024",
+        "titre": "NGC 602",
+        "view": "Constellation de la Colombe",
+        "description": "Cette image prise par NIRCam et MIRI laisse libre cours à l’imagination. Le rayonnement et l’onde choc de l’amas ont éjecté la majeure partie du gaz de la nébuleuse. Les nuages sombres de poussière dense et la forte densité de gaz ionisé suggèrent que des étoiles y sont en cours de formation. Située dans la constellation de l’Hydre, la nébuleuse se trouve à 200 000 années lumière.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/weic2425a-2-1170x765.jpg"
+    },
+    {
+        "id": "8"
+        "date": "1er octobre 2024",
+        "titre": "L’amas de l’Autel",
+        "view": "Constellation de la Colombe",
+        "description": "Cet amas, aussi connu sous le nom de Westerlund 1, est situé à 12 000 années-lumière. Il concentre une très forte densité d’étoiles massives, sans égal dans le reste de notre galaxie. Cet amas est estimé entre 3,5 et 5 millions d’années.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/potm2409a-2-1170x764.jpg"
+    },
+    {
+        "id": "9"
+        "date": "27 août 2024",
+        "titre": "Trois supernovas pour le prix d’une seule",
+        "view": "Constellation de la Colombe",
+        "description": "Cette image prise par NIRCam montre la supernova H0pe, qui apparaît trois fois grâce au phénomène de lentille gravitationnelle. La lumière a pris trois chemins différents à travers l’amas de galaxie G165, situé à 3,6 milliards d’années-lumière.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/h0pe-1170x585.jpg"
+    },
+    {
+        "id": "10"
+        "date": "18 septembre 2024",
+        "titre": "Arp 107 : quand deux galaxies entrent en collision",
+        "view": "Constellation de la Colombe",
+        "description": "Cette image montre deux galaxies en collision. Les données dans le proche infrarouge révèlent des étoiles anciennes, tandis que les données MIRI mettent en évidence les jeunes étoiles et les régions de formation d’étoiles.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/arp107-1170x467.jpg"
+    },
+    {
+        "id": "11"
+        "date": "20 juin 2024",
+        "titre": "Le nuage de Digel 2S",
+        "view": "Constellation de la Colombe",
+        "description": "Cette image montre deux amas lumineux de jeunes étoiles dans le nuage de Digel, situé à 40 000 années-lumière. Certaines étoiles sont des proto-étoiles avec des disques d’accrétion et des jets de matière.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/weic2422a-1170x856.jpg"
+    },
+    {
+        "id": "12"
+        "date": "30 mai 2024",
+        "titre": "NGC 1333 : la nébuleuse de Persée",
+        "view": "Constellation de la Colombe",
+        "description": "Cette nébuleuse par réflexion, située à 960 années-lumière, est un site actif de formation d’étoiles. Les objets Herbig-Haro visibles témoignent de collisions entre matière ionisée et nuages environnants.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/ngc1333-1170x957.jpg"
+    },
+    {
+        "id": "13"
+        "date": "12 juillet 2024",
+        "titre": "Le manchot gardant son œuf",
+        "view": "Constellation de la Colombe",
+        "description": "Ce duo de galaxies, Arp 142, a subi une collision il y a entre 25 et 75 millions d’années. Cette collision a déclenché une formation intense de nouvelles étoiles.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/arp142-1100x1536.jpg"
+    },
+    {
+        "id": "14"
+        "date": "9 juin 2024",
+        "titre": "La nébuleuse du serpent",
+        "view": "Constellation de la Colombe",
+        "description": "Située à 1 300 années-lumière, cette région de formation d’étoiles contient un amas dense d’étoiles nouvelles. Le gaz et la poussière sont si denses qu’aucune lumière proche de l’infrarouge ne passe.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/nebuleuse-du-serpent-1170x741.jpg"
+    },
+    {
+        "id": "15"
+        "date": "30 mai 2024",
+        "titre": "JADES-GS-z14-0",
+        "view": "Constellation de la Colombe",
+        "description": "Cette galaxie primitive, observée 290 millions d’années après le Big Bang, offre des informations précieuses sur les premières phases de formation des galaxies.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/jades4-1170x1143.jpg"
+    },
+    {
+        "id": "16"
+        "date": "29 mai 2024",
+        "titre": "Caldwell 21",
+        "view": "Constellation de la Colombe",
+        "description": "La galaxie NGC 4449 aussi répertoriée sous le nom de Caldwell 21 est située à 12 millions d’années-lumière de la Terre. Elle forme des étoiles depuis plusieurs milliards d’années, mais elle connaît actuellement une période de formation d’étoiles à un rythme beaucoup plus élevé que par le passé. On parle de sursaut d’étoiles.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/ngc-4449-1170x689.jpg"
+    },
+    {
+        "id": "17"
+        "date": "1er mai 2024",
+        "titre": "L’illumination de NGC 6440",
+        "view": "Constellation de la Colombe",
+        "description": "NGC 6440, un amas globulaire situé à environ 28 000 années-lumière de la Terre dans la constellation du Sagittaire. Il s’agit d’un amas de vieilles étoiles, liées entre elles par la gravité. Ils contiennent des centaines de milliers d’étoiles.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/ngc6440.jpg"
+    },
+    {
+        "id": "18"
+        "date": "3 avril 2024",
+        "titre": "M82 la galaxie du cigare",
+        "view": "Constellation de la Colombe",
+        "description": "Déjà recensée au XVIIIe siècle, la galaxie du cigare est située à 12 millions d’années-lumière. Cette image révèle un vent galactique déclenché par la formation rapide d’étoiles et les supernovas qui en découlent.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/m82.jpg"
+    },
+    {
+        "id": "19"
+        "date": "9 mars 2024",
+        "titre": "La nébuleuse du triangle",
+        "view": "Constellation de la Colombe",
+        "description": "La nébuleuse du triangle, aussi appelée NGC 604, contient plus de 200 des types d’étoiles les plus chaudes et les plus massives toutes en début de vie. Elle est située à 2,5 millions d’années-lumière.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/ngc604.jpg"
+    },
+    {
+        "id": "20"
+        "date": "23 janvier 2023",
+        "titre": "N79 dans le Grand nuage de Magellan",
+        "view": "Constellation de la Colombe",
+        "description": "Cette région capturée par MIRI est une région de formation d’étoiles qui s’étend sur 1630 années-lumière. Cette région aurait produit beaucoup plus d’étoiles que la nébuleuse de la Tarentule.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/a-massive-cluster-is-born.jpg"
+    },
+    {
+        "id": "21"
+        "date": "20 novembre 2023",
+        "titre": "Sagittarius C",
+        "view": "Constellation de la Colombe",
+        "description": "Cette vue couvre 50 années-lumière de large du centre dense de la Voie lactée. Une vaste région d’hydrogène ionisé s’enroule autour d’un nuage sombre infrarouge, si dense qu’il bloque la lumière des étoiles lointaines.",
+        "url_image": "https://www.cite-espace.com/assets/uploads/023-sagittarius-c-1170x443.jpg"
+    },
+    {
+        "id": "22"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "23"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "24"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "25"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "26"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "27"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "28"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "29"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    },
+    {
+        "id": "30"
+        "titre": "",
+        "view": "Constellation de la Colombe",
+        "description": "",
+        "constellation": "",
+        "date": "",
+        "credit": ""
+    }
+]

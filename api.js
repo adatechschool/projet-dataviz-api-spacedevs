@@ -32,3 +32,7 @@ export const fetchData = async (type, firstEntry, secondEntry) => {
         throw error;
     }
 };
+
+const fetchJamesWebb = () => {
+    
+}
