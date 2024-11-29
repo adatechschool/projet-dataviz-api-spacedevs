@@ -3,9 +3,9 @@
         "id": "1",
         "date": "12 juillet 2022",
         "titre": "La toute première image du JWST : SMACS 0723",
-        "constellation": "Volans",
+        "sous-titre": "Amas de galaxies à effet de lentille",
+        "constellation": "Constellation du Poisson volant",
         "Distance": "Le décalage vers le rouge de l'amas est z=0,39 (environ 4,24 milliards d'années-lumière)",
-        "view": "Amas de galaxies à effet de lentille",
         "description": "Cette première image a permis de découvrir l’image infrarouge la plus nette et la plus profonde jamais produite. Il s’agit de l’amas de galaxies SMACS 0723, apparaissant tel qu’il était il y a 4,6 milliards d’années, révélant des milliers de galaxies.",
         "image_path": "./media/james-webb/SMACS-0723-JWST.png"
     },
@@ -13,10 +13,9 @@
         "id": "2",
         "date": "27 novembre 2024",
         "titre": "NGC 2090",
-        "constellation": "Columba",
+        "sous-titre": "Galaxie Spirale",
+        "constellation": "Constellation de la Colombe",
         "Distance": "40 millions d'années-lumière",
-        "type": "GALAXIE SPIRALE",
-        "view": "null",
         "description": "Grâce aux instruments NIRCam et MIRI combinés, le télescope spatial James Webb nous montre cette galaxie spirale située dans la constellation de la Colombe à 40 millions d’années-lumière. Les bras spiraux, le gaz et la poussière sont visibles avec d’incroyables détails.",
         "image_path": "./media/james-webb/NGC-2090.jpg"
     },
@@ -24,13 +23,14 @@
         "id": "3",
         "date": "25 novembre 2024",
         "titre": "La galaxie du Sombrero M104",
-        "constellation": "virgo",
+        "sous-titre": "Galaxie Spirale",
+        "constellation": "Constellation de la vierge",
         "Distance": "À environ 29 millions d'années-lumière",
         "description": "Cette image a été obtenue grâce à l’instrument MIRI. Elle montre la galaxie du Sombrero déjà immortalisée par Hubble. La galaxie est située à 30 millions d’années-lumière. Elle produit qu’une seule étoile de la masse de notre Soleil par an, deux fois moins que la Voie Lactée.",
         "url_image": "./media/james-webb/sombrero-galaxy-M104.png"
     },
     {
-        "id": "6",
+        "id": "4",
         "date": "31 octobre 2024",
         "titre": "IC 2163 et NGC 2207",
         "sous-titre": "Quand deux galaxies se frôlèrent",
@@ -135,7 +135,7 @@
         "view": "Constellation de la Colombe",
         "description": "La galaxie NGC 4449 aussi répertoriée sous le nom de Caldwell 21 est située à 12 millions d’années-lumière de la Terre. Elle forme des étoiles depuis plusieurs milliards d’années, mais elle connaît actuellement une période de formation d’étoiles à un rythme beaucoup plus élevé que par le passé. On parle de sursaut d’étoiles.",
         "url_image": "https://www.cite-espace.com/assets/uploads/ngc-4449-1170x689.jpg"
-    },
+    },//
     {
         "id": "17"
         "date": "1er mai 2024",
@@ -177,84 +177,12 @@
         "url_image": "https://www.cite-espace.com/assets/uploads/023-sagittarius-c-1170x443.jpg"
     },
     {
-        "id": "22"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
+        "id": "X",
         "date": "",
-        "credit": ""
+        "titre": "",
+        "constellation": "",
+        "Distance": "",
+        "view": "",
+        "description": "",
+        "image_path": "./media/james-webb/"
     },
-    {
-        "id": "23"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    },
-    {
-        "id": "24"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    },
-    {
-        "id": "25"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    },
-    {
-        "id": "26"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    },
-    {
-        "id": "27"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    },
-    {
-        "id": "28"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    },
-    {
-        "id": "29"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    },
-    {
-        "id": "30"
-        "titre": "",
-        "view": "Constellation de la Colombe",
-        "description": "",
-        "constellation": "",
-        "date": "",
-        "credit": ""
-    }
-]
