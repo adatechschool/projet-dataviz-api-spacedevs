@@ -4,7 +4,7 @@ export const homeScreen = document.getElementById('hoem-screen');
 
 // SEARCH-BY-DATE.HTML
 export const buttonDisplayRange = document.getElementById('button-display-range');
-export const  displayContainer = document.getElementById('display-container')
+export const  displayContainer = document.getElementById('display-container') 
 
 /*export const loadingMessage = document.createElement('h2');
 XXXXXXX.appendChild(loadingMessage);

@@ -1,5 +1,6 @@
 import { fetchData } from "./api.js";
 import { buttonDisplayRange, displayContainer } from "./dom.js";
+
 const apodContainer = document.getElementById("apod-container");
 
 const loadApod = async (type) => {
