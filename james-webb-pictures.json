@@ -40,24 +40,7 @@
         "url_image": "https://www.cite-espace.com/assets/uploads/weic2426a-1-1170x549.jpg"
     },
     {
-        "id": "2",
-        "date": "12 juillet 2022",
-        "titre": "Nébuleuse de l’anneau austral",
-        "constellation": "virgo",
-        "view": "Constellation de la Colombe",
-        "description": "Cette nébuleuse planétaire, découverte par l’astronome britannique John Herschel en 1835, a un diamètre d’environ 0,93 année-lumière. Les deux étoiles au centre forment un système binaire, dont le membre le moins lumineux est la naine blanche à l'origine de cette nébuleuse.",
-        "url_image": "https://www.cite-espace.com/wp-content/uploads/2022/07/Nebuleuse-anneau-austral-JWST.jpg"
-    },
-    {
-        "id": "3",
-        "date": "11 juillet 2022",
-        "titre": "Le Quintette de Stéphan",
-        "view": "Constellation de la Colombe",
-        "description": "Ce regroupement visuel de galaxies dans la constellation de Pégase compte initialement cinq galaxies membres : NGC 7317, la paire de galaxies NGC 7318 (A et B), NGC 7319 et NGC 7320. Parmi elles, quatre forment réellement un groupe compact situé à environ 290 millions d’années-lumière.",
-        "image_path": "https://www.cite-espace.com/wp-content/uploads/2022/07/Quintette-Stephan-JWST.jpg"
-    },
-    {
-        "id": "7"
+        "id": "5"
         "date": "4 octobre 2024",
         "titre": "NGC 602",
         "view": "Constellation de la Colombe",
@@ -135,7 +118,7 @@
         "view": "Constellation de la Colombe",
         "description": "La galaxie NGC 4449 aussi répertoriée sous le nom de Caldwell 21 est située à 12 millions d’années-lumière de la Terre. Elle forme des étoiles depuis plusieurs milliards d’années, mais elle connaît actuellement une période de formation d’étoiles à un rythme beaucoup plus élevé que par le passé. On parle de sursaut d’étoiles.",
         "url_image": "https://www.cite-espace.com/assets/uploads/ngc-4449-1170x689.jpg"
-    },//
+    },
     {
         "id": "17"
         "date": "1er mai 2024",
@@ -153,36 +136,23 @@
         "url_image": "https://www.cite-espace.com/assets/uploads/m82.jpg"
     },
     {
-        "id": "19"
-        "date": "9 mars 2024",
-        "titre": "La nébuleuse du triangle",
-        "view": "Constellation de la Colombe",
-        "description": "La nébuleuse du triangle, aussi appelée NGC 604, contient plus de 200 des types d’étoiles les plus chaudes et les plus massives toutes en début de vie. Elle est située à 2,5 millions d’années-lumière.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/ngc604.jpg"
+        "id": "1",
+        "date": "12 juillet 2022",
+        "titre": "La toute première image du JWST : SMACS 0723",
+        "sous-titre": "Amas de galaxies à effet de lentille",
+        "constellation": "Constellation du Poisson volant",
+        "Distance": "Le décalage vers le rouge de l'amas est z=0,39 (environ 4,24 milliards d'années-lumière)",
+        "description": "Cette première image a permis de découvrir l’image infrarouge la plus nette et la plus profonde jamais produite. Il s’agit de l’amas de galaxies SMACS 0723, apparaissant tel qu’il était il y a 4,6 milliards d’années, révélant des milliers de galaxies.",
+        "image_path": "./media/james-webb/SMACS-0723-JWST.png"
     },
     {
-        "id": "20"
-        "date": "23 janvier 2023",
-        "titre": "N79 dans le Grand nuage de Magellan",
-        "view": "Constellation de la Colombe",
-        "description": "Cette région capturée par MIRI est une région de formation d’étoiles qui s’étend sur 1630 années-lumière. Cette région aurait produit beaucoup plus d’étoiles que la nébuleuse de la Tarentule.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/a-massive-cluster-is-born.jpg"
-    },
-    {
-        "id": "21"
-        "date": "20 novembre 2023",
-        "titre": "Sagittarius C",
-        "view": "Constellation de la Colombe",
-        "description": "Cette vue couvre 50 années-lumière de large du centre dense de la Voie lactée. Une vaste région d’hydrogène ionisé s’enroule autour d’un nuage sombre infrarouge, si dense qu’il bloque la lumière des étoiles lointaines.",
-        "url_image": "https://www.cite-espace.com/assets/uploads/023-sagittarius-c-1170x443.jpg"
-    },
-    {
-        "id": "X",
+        "id": "17",
         "date": "",
         "titre": "",
+        "sous-titre": "",
         "constellation": "",
         "Distance": "",
-        "view": "",
         "description": "",
         "image_path": "./media/james-webb/"
     },
+]
