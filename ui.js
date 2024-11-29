@@ -1,12 +1,7 @@
 import { fetchData } from "./api.js";
 import { buttonDisplayRange, displayContainer } from "./dom.js";
+
 const apodContainer = document.getElementById('apod-container');
-
-let userChoiceDate;
-let startDate;
-let endDate;
-
-
 
 const loadApod = async (type) => {
   try {
@@ -29,7 +24,8 @@ buttonDisplayRange.addEventListener('click', async () => {
   const inputEndDate = document.getElementById('input-end-date').value;
   const startDate = inputStartDate;
   const endDate = inputEndDate;
-  console.log(startDate, endDate);
+  console.log(startDate ,endDate);
+  
 
   try {
     const data = await fetchData('range', startDate, endDate);
