@@ -1,6 +1,7 @@
 import { fetchData } from "./api.js";
 import { buttonDisplayRange, displayContainer } from "./dom.js";
 
+
 const apodContainer = document.getElementById("apod-container");
 
 const loadApod = async (type) => {
@@ -42,3 +43,4 @@ buttonDisplayRange.addEventListener("click", async () => {
       "<p>Une erreur est survenue lors du chargement des données.</p>";
   }
 });
+
