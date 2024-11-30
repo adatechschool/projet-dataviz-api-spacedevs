@@ -7,7 +7,8 @@
     "constellation": "Constellation du Poisson volant",
     "Distance": "Le décalage vers le rouge de l'amas est z=0,39 (environ 4,24 milliards d'années-lumière)",
     "description": "Cette première image a permis de découvrir l’image infrarouge la plus nette et la plus profonde jamais produite. Il s’agit de l’amas de galaxies SMACS 0723, apparaissant tel qu’il était il y a 4,6 milliards d’années, révélant des milliers de galaxies.",
-    "image_path": "./media/james-webb/SMACS-0723-JWST.png"
+    "image_url": "./media/james-webb/SMACS-0723-JWST.png",
+    "image_hdurl": "./media/james-webb/SMACS-0723-JWST.png"
   },
   {
     "id": "2",
