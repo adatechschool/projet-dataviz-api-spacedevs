@@ -14,8 +14,6 @@ export const fetchData = async (type, firstEntry, secondEntry) => {
             url = `${BASE_URL_API}?start_date=${firstEntry}&end_date=${secondEntry}&api_key=${KEY}`;
         } else if (type === 'random') {
             url = `${BASE_URL_API}?count=${firstEntry}&api_key=${KEY}`;
-        } else if (type === 'thumbs') {
-            url = `${BASE_URL_API}?thumbs=${firstEntry}&api_key=${KEY}`;
         } else {
             throw new Error(`Type de requête non pris en charge : ${type}`);
         }
@@ -35,8 +33,6 @@ export const fetchData = async (type, firstEntry, secondEntry) => {
 };
 
 
-
-
 const loadImage = (src) => {
     return new Promise((resolve, reject) => {
         const img = new Image();
@@ -46,7 +42,7 @@ const loadImage = (src) => {
     });
 };
 
-const loadGallery = async () => {
+export const loadGallery = async () => {
     try {
         const galerieContainer = document.getElementById('galerie-container');
         
@@ -72,5 +68,5 @@ const loadGallery = async () => {
     }
 };
 
-loadGallery();
+
 
