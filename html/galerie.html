@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="image/nasa-icon" rel="shortcut icon" href="/assets/icons/NASA_logo.svg.png"/>
+    <link
+      type="image/nasa-icon"
+      rel="shortcut icon"
+      href="/assets/icons/NASA_logo.svg.png"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <script type="module" src="/js/dom.js" defer></script>
     <script type="module" src="/js/api.js" defer></script>
@@ -14,6 +18,7 @@
   <body>
     <header>
       <nav>
+        <button id="toggleTheme" class="toggleTheme">clair/foncé</button>
         <div class="logo">
           <img src="/assets/icons/NASA_logo.svg.png" alt="logo de la NASA" />
         </div>
@@ -21,14 +26,13 @@
           <a href="/html/index.html">Acceuil</a>
           <a href="/html/search-by-date.html">Recherche par date</a>
           <a href="/html/galerie.html">Galerie</a>
-          <a id="random-button" href="/html/random.html">Afficher image aléatoire</a>
+          <a id="random-button" href="/html/random.html"
+            >Afficher image aléatoire</a
+          >
         </div>
       </nav>
     </header>
 
     <div id="galerie-container"></div>
-
-
-
   </body>
 </html>
