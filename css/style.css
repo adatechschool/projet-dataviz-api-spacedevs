@@ -135,3 +135,52 @@ img {
   text-align: justify;
   padding: 16px;
 }
+.container {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.info-box {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+.info-box h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+.info-box h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: lightblue;
+}
+.info-box p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.info-box a {
+  color: lightblue;
+  text-decoration: none;
+}
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  z-index: 10;
+}
+.nav-button.left {
+  left: 20px;
+}
+.nav-button.right {
+  right: 20px;
+}

@@ -75,6 +75,3 @@ if (window.location.pathname.endsWith("random.html")) {
   displayRandomPicture();
 }
 
-if (window.location.pathname.endsWith("galerie.html")) {
-  loadGallery();
-};

@@ -68,5 +68,46 @@ export const loadGallery = async () => {
     }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".container");
+    const infoBox = document.querySelector(".info-box");
+    const leftButton = document.querySelector(".nav-button.left");
+    const rightButton = document.querySelector(".nav-button.right");
+  
+    let currentIndex = 0;
+  
+    const updateSlide = () => {
+      const slide = jamesWebbPictures[currentIndex];
+  
+      // Update the image or background
+      container.style.backgroundImage = `url(${slide.image_url})`;
+  
+      // Update the info-box content
+      infoBox.innerHTML = `
+        <h2>${slide.titre}</h2>
+        <h3>${slide.sous_titre}</h3>
+        <p><strong>Date :</strong> ${slide.date}</p>
+        <p><strong>Constellation :</strong> ${slide.constellation}</p>
+        <p><strong>Distance :</strong> ${slide.distance}</p>
+        <p><strong>Description :</strong> ${slide.description}</p>
+        <a href="${slide.image_hdurl}" target="_blank" class="hd-link">Voir en haute définition</a>
+      `;
+    };
+  
+    // Initialize the first slide
+    updateSlide();
+  
+    // Navigation logic
+    leftButton.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + jamesWebbPictures.length) % jamesWebbPictures.length;
+      updateSlide();
+    });
+  
+    rightButton.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % jamesWebbPictures.length;
+      updateSlide();
+    });
+  });
+
 
 
