@@ -1,4 +1,4 @@
-import { fetchData, loadGallery } from "./api.js";
+import { fetchData } from "./api.js";
 import { buttonDisplayRange, displayContainer, randomButton } from "./dom.js";
 const apodContainer = document.getElementById("apod-container");
 const randomContainer = document.getElementById('random-container');
@@ -37,7 +37,22 @@ if (window.location.pathname.endsWith("search-by-date.html")) {
   
     try {
       loadingMessage.style.display = 'block'
-      const data = await fetchData("range", startDate, endDate);
+
+      if (endDate === null) {
+        const data = await fetchData('date', startDate);
+        data.forEach((item) => {
+          displayContainer.innerHTML = 
+          `
+          <div class="data-item">
+              <h3>${item.title}</h3>
+              <p><strong>Date:</strong> ${item.date}</p>
+              <img src="${item.url}" alt="${item.title}" />
+              <p>${item.explanation}</p>
+            </div>
+          `
+        });
+      } else {
+        const data = await fetchData("range", startDate, endDate);
       loadingMessage.style.display = 'none'
       data.forEach((item) => {
         displayContainer.innerHTML += `
@@ -49,6 +64,8 @@ if (window.location.pathname.endsWith("search-by-date.html")) {
             </div>
           `;
       });
+      }
+      
     } catch (error) {
       console.error("Erreur dans fetchData:", error);
       displayContainer.innerHTML =
@@ -74,4 +91,3 @@ const displayRandomPicture = async () => {
 if (window.location.pathname.endsWith("random.html")) {
   displayRandomPicture();
 }
-
