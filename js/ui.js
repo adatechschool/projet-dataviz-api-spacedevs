@@ -19,7 +19,6 @@ if (window.location.pathname.endsWith("index.html")) {
   loadApod("apod");
 }
 
-
 if (window.location.pathname.endsWith("search-by-date.html")) {
   buttonDisplayRange.addEventListener("click", async () => {
     const inputStartDate = document.getElementById("input-start-date").value;
@@ -38,19 +37,18 @@ if (window.location.pathname.endsWith("search-by-date.html")) {
     try {
       loadingMessage.style.display = 'block'
 
-      if (endDate === null) {
+      if (!endDate) {
         const data = await fetchData('date', startDate);
-        data.forEach((item) => {
-          displayContainer.innerHTML = 
+        loadingMessage.style.display = 'none'
+          displayContainer.innerHTML += 
           `
           <div class="data-item">
-              <h3>${item.title}</h3>
-              <p><strong>Date:</strong> ${item.date}</p>
-              <img src="${item.url}" alt="${item.title}" />
-              <p>${item.explanation}</p>
+              <h3>${data.title}</h3>
+              <p><strong>Date:</strong> ${data.date}</p>
+              <img src="${data.url}" alt="${data.title}" />
+              <p>${data.explanation}</p>
             </div>
           `
-        });
       } else {
         const data = await fetchData("range", startDate, endDate);
       loadingMessage.style.display = 'none'
@@ -69,7 +67,7 @@ if (window.location.pathname.endsWith("search-by-date.html")) {
     } catch (error) {
       console.error("Erreur dans fetchData:", error);
       displayContainer.innerHTML =
-        "<p>Une erreur est survenue lors du chargement des données.</p>";
+        "<p>Une erreur est survenue lors du chargement des données.<br> veuillez introduire une date valide</p>";
     }
   });
 };
