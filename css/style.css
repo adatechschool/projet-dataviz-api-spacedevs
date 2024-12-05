@@ -27,6 +27,8 @@ nav .logo img {
   width: 60px;
   height: 60px;
   object-fit: contain;
+  left: 344%;
+  position: relative;
 }
 
 nav .search {
@@ -180,18 +182,20 @@ nav .toggleTheme {
 }
 .nav-button {
   position: absolute;
-  top: 180px;
+  top: 100%;
   transform: translateY(-50%);
   cursor: pointer;
   font-size: 30px;
   color: white;
   z-index: 10;
+  
 }
+
 .nav-button.left {
-  left: 20px;
+  left: 450px;
 }
 .nav-button.right {
-  right: 20px;
+  right: 450px;
 }
 
 .display-container p,
