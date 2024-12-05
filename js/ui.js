@@ -1,8 +1,7 @@
 import { fetchData } from "./api.js";
-import { buttonDisplayRange, displayContainer, randomButton } from "./dom.js";
+import { buttonDisplayRange, displayContainer } from "./dom.js";
 const apodContainer = document.getElementById("apod-container");
-const randomContainer = document.getElementById('random-container');
-
+const randomContainer = document.getElementById("random-container");
 
 if (window.location.pathname.endsWith("index.html")) {
   const loadApod = async (type) => {
@@ -26,65 +25,62 @@ if (window.location.pathname.endsWith("search-by-date.html")) {
     const startDate = inputStartDate;
     const endDate = inputEndDate;
     //console.log(startDate, endDate);
-    displayContainer.innerHTML = ''
-    const loadingMessage = document.createElement('h2');
+    displayContainer.innerHTML = "";
+    const loadingMessage = document.createElement("h2");
     displayContainer.appendChild(loadingMessage);
-    loadingMessage.style.display = 'none'
-    loadingMessage.innerText = 'Chargement des ressources ...';
-    loadingMessage.style.fontSize = '30px';
-    loadingMessage.style.color = 'white';
-  
+    loadingMessage.style.display = "none";
+    loadingMessage.innerText = "Chargement des ressources ...";
+    loadingMessage.style.fontSize = "30px";
+    loadingMessage.style.color = "white";
+
     try {
-      loadingMessage.style.display = 'block'
+      loadingMessage.style.display = "block";
 
       if (!endDate) {
-        const data = await fetchData('date', startDate);
-        loadingMessage.style.display = 'none'
-          displayContainer.innerHTML += 
-          `
+        const data = await fetchData("date", startDate);
+        loadingMessage.style.display = "none";
+        displayContainer.innerHTML += `
           <div class="data-item">
-              <h3>${data.title}</h3>
-              <p><strong>Date:</strong> ${data.date}</p>
+              <h1>${data.date}</h1>
+              <h2>${data.title}</h2>
               <img src="${data.url}" alt="${data.title}" />
               <p>${data.explanation}</p>
             </div>
-          `
+          `;
       } else {
         const data = await fetchData("range", startDate, endDate);
-      loadingMessage.style.display = 'none'
-      data.forEach((item) => {
-        displayContainer.innerHTML += `
+        loadingMessage.style.display = "none";
+        data.forEach((item) => {
+          displayContainer.innerHTML += `
             <div class="data-item">
-              <h3>${item.title}</h3>
-              <p><strong>Date:</strong> ${item.date}</p>
+            <h1>${item.date}</h1>
+              <h2>${item.title}</h2>
               <img src="${item.url}" alt="${item.title}" />
               <p>${item.explanation}</p>
             </div>
           `;
-      });
+        });
       }
-      
     } catch (error) {
       console.error("Erreur dans fetchData:", error);
       displayContainer.innerHTML =
         "<p>Une erreur est survenue lors du chargement des données.<br> veuillez introduire une date valide</p>";
     }
   });
-};
+}
 
 const displayRandomPicture = async () => {
-  const data = await fetchData('random', '10');
-  console.log(data)
+  const data = await fetchData("random", "10");
+  console.log(data);
   data.forEach((item) => {
-    randomContainer.innerHTML += 
-    `
+    randomContainer.innerHTML += `
     <h1>${item.date}</h1>
     <h2>${item.title}</h2>
     <img src=${item.url}>
-    <h3>${item.explanation}</h3>
+    <p>${item.explanation}</p>
     `;
   });
-}
+};
 
 if (window.location.pathname.endsWith("random.html")) {
   displayRandomPicture();
