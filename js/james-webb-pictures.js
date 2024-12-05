@@ -74,7 +74,7 @@ export const jamesWebbPictures = [
   {
     date: "27 août 2024",
     titre: "Trois supernovas pour le prix d’une seule",
-    "sous-titre": "Une supernova à la lentille gravitationelle",
+    sous_titre: "Une supernova à la lentille gravitationelle",
     constellation: "Constellation de la Grande Ourse",
     distance: "3,6 milliards d'années-lumière",
     description:
@@ -282,7 +282,7 @@ export const jamesWebbPictures = [
     sous_titre: "Jeune étoile en formation",
     constellation: "Constellation de Persée",
     distance: "1 000 années-lumière",
-    descrition:
+    description:
       "Ceci est une jeune étoile semblable à notre Soleil. Les objets Herbig-Haro se forment lorsque des vents stellaires ou des jets de gaz crachés par des étoiles nouveau-nées forment des ondes de choc entrant en collision avec le gaz et la poussière proches à grande vitesse. Les molécules excitées par les conditions turbulentes, notamment l’hydrogène moléculaire, le monoxyde de carbone et le monoxyde de silicium, émettent une lumière infrarouge, recueillie par le télescope spatial James Webb.",
     image_url: "https://stsci-opo.org/STScI-01H9NWX3EYP3VJKTA68ZCQS8BS.jpg",
     image_hdurl: "https://stsci-opo.org/STScI-01H9NWVV0ZBSN30GG5M18H5Q7H.tif",
