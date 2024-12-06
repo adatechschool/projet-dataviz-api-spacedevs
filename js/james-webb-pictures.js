@@ -1,7 +1,7 @@
 export const jamesWebbPictures = [
   {
     date: "12 juillet 2022",
-    titre: "La toute première image du JWST : SMACS 0723",
+    throwitre: "La toute première image du JWST : SMACS 0723",
     sous_titre: "Amas de galaxies à effet de lentille",
     constellation: "Constellation du Poisson volant",
     distance: "4,24 milliards d'années-lumière",

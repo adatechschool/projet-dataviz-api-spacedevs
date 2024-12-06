@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      type="image/nasa-icon"
-      rel="shortcut icon"
-      href="/assets/icons/NASA_logo.svg.png"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link type="image/nasa-icon" rel="shortcut icon" href="/assets/icons/NASA_logo.svg.png"/>
+    <link rel="stylesheet" href="/css/style.css"/>
     <script type="module" src="/js/dom.js" defer></script>
     <script type="module" src="/js/api.js" defer></script>
     <script type="module" src="/js/ui.js" defer></script>
@@ -16,34 +12,43 @@
     <title>NASA</title>
   </head>
   <body>
+
     <header>
       <nav>
+
         <button id="toggleTheme" class="toggleTheme">clair/foncé</button>
+
         <div class="logo">
-          <img src="/assets/icons/NASA_logo.svg.png" alt="logo de la NASA" />
+          <img src="/assets/icons/NASA_logo.svg.png" alt="logo de la NASA"/>
         </div>
+
         <div>
           <a href="/html/index.html">Acceuil</a>
           <a href="/html/search-by-date.html">Recherche par date</a>
           <a href="/html/galerie.html">Galerie</a>
-          <a id="random-button" href="/html/random.html"
-            >Afficher image aléatoire</a
-          >
+          <a id="random-button" href="/html/random.html">Afficher image aléatoire</a>
         </div>
+
       </nav>
     </header>
+
+
     <section class="all-container">
+
       <div class="container"></div>
       <div class="info-box"></div>
-      <!-- Navigation Buttons -->
+
       <div class="nav-button left">
           <img src="https://img.icons8.com/nolan/64/back.png" alt="Previous Slide" />
       </div>
+
       <div class="nav-button right">
           <img src="https://img.icons8.com/nolan/64/forward.png" alt="Next Slide" />
       </div>
-   </section>
+      
+    </section>
 
     <div id="galerie-container"></div>
+    
   </body>
 </html>
